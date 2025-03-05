@@ -1,0 +1,53 @@
+/* larger.css */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .course-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+  }
+
+  .course-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Ajout d'une ligne pour séparer les éléments */
+  }
+
+  #course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  #filter-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}

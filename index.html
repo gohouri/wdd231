@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Home Page</title>
+  <meta name="description" content="Course home page for WDD231">
+  <meta name="author" content="Rubio I. Francesco">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/profile-pic.png" alt="Rubio I. Francesco">
+    <h1>Rubia M. Francesco</h1>
+  </header>
+  <nav>
+    <button id="menu-button">☰</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="https://github.com/yourusername">GitHub Profile</a></li>
+      <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Course Work</h2>
+      <div id="course-cards">
+        <!-- Course cards will be dynamically inserted here -->
+      </div>
+    </section>
+    <section>
+      <h2>Toloria, Madagascar</h2>
+      <p>Babb Tab Tres</p>
+    </section>
+    <section>
+      <h2>Web and Computer Programming Certificate</h2>
+      <div id="filter-buttons">
+        <button onclick="displayCourses('all')">All</button>
+        <button onclick="displayCourses('CSE')">CSE</button>
+        <button onclick="displayCourses('WDD')">WDD</button>
+      </div>
+      <div id="course-list">
+        <!-- Course list will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="currentyear"></span> Rubia Magdalena Francesco @ Madagascar</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
