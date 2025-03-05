@@ -1,53 +1,208 @@
-/* larger.css */
-@media (min-width: 768px) {
-  nav ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+/* Fonts that are usable */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-  .course-card {
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
-  }
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .course-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ccc; /* Ajout d'une ligne pour séparer les éléments */
-  }
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-  #course-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+/* Fixed items */
+:root {
+  --largerFont: 700;
+  --mediumFont: 400;
+  --smallFont: 100;
+  --mainbackgroundColor: white;
+  --titlebackgroundColor: orange;
+  --textColor: white;  
+  --navBackgroundColor: black;
+  --navTextColor: white;
+  --navHoverColor: blue;
+  --classTakenColor: green;
+}
 
-  #filter-buttons {
-    justify-content: center;
-    gap: 10px;
-  }
+/* Full body */
+html, body {
+  height: 100%;
+  margin: 0; /* Add margin reset */
+  background-color: var(--mainbackgroundColor);
+  font-family: "Roboto", sans-serif;
+}
 
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
-  }
+/* Header components */
+header {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center; /* Center the items horizontally */
+  background-color: var(--titlebackgroundColor);
+}
 
-  header img {
-    width: 120px;
-    height: 120px;
-  }
+.homePage {
+  display: flex;
+  align-items: center; /* Align image and heading vertically */
+  margin-bottom: 20px; 
+}
 
-  footer {
-    font-size: 0.9em;
-  }
+.homePage img {
+  margin: 15px; 
+}
+
+#menu {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  background: none; /* Remove button background */
+  color: var(--navTextColor);
+  border: none;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: '☰';
+}
+
+#menu.open::before {
+  content: '✖'; 
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: var(--navBackgroundColor);
+}
+
+nav a {
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--navTextColor);
+}
+
+a {
+  font-size: larger;
+} 
+
+.navList {
+  list-style-type: none;
+  color: var(--navTextColor);
+}
+
+nav a:hover {
+  background-color: var(--navHoverColor);
+  color: white;
+}
+
+.open a {
+  display: block;
+}
+
+/* Main components */
+main {
+  flex: 1; 
+}
+
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flexbox {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional for visual clarity */
+  flex: 1 1 100%; /* Default to full width on smaller screens */
+}
+
+.flexbox h2 {
+  text-align: center;
+  background-color: var(--titlebackgroundColor);
+}
+
+.item-2 {
+  text-align: center;
+}
+/* dialog box */
+dialog {
+  
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+::backdrop {
+  background-color: var(--mainbackgroundColor);
+}
+dialog button {
+  position: absolute;
+}
+
+
+
+.coursesButton { 
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.coursesButton button {
+  height: 50px;
+  width: 70px;
+  flex: 1;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.classesTaken {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+
+.course {
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Footer components */
+footer {
+  text-align: center;
+  background-color: var(--titlebackgroundColor);    
+  padding: 1rem;
+  border-top: 2px solid; /* Specify border style */
+  font-weight: 500;
+}
+
+footer p {
+  margin: 0.5rem 0;
 }

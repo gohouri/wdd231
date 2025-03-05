@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Home Page</title>
-  <meta name="description" content="Course home page for WDD231">
-  <meta name="author" content="Rubio I. Francesco">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ANGE JUNIOR GOHOURI">
+    <meta name="description" content="A course home page that I will use to host all the websites i create this semester namely in WDD 231.">
+    <title>Course Home Page - ANGE JUNIOR GOHOURI</title>
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="images/profile-pic.png" alt="Rubio I. Francesco">
-    <h1>Rubia M. Francesco</h1>
-  </header>
-  <nav>
-    <button id="menu-button">☰</button>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Chamber</a></li>
-      <li><a href="https://github.com/yourusername">GitHub Profile</a></li>
-      <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>Course Work</h2>
-      <div id="course-cards">
-        <!-- Course cards will be dynamically inserted here -->
-      </div>
-    </section>
-    <section>
-      <h2>Toloria, Madagascar</h2>
-      <p>Babb Tab Tres</p>
-    </section>
-    <section>
-      <h2>Web and Computer Programming Certificate</h2>
-      <div id="filter-buttons">
-        <button onclick="displayCourses('all')">All</button>
-        <button onclick="displayCourses('CSE')">CSE</button>
-        <button onclick="displayCourses('WDD')">WDD</button>
-      </div>
-      <div id="course-list">
-        <!-- Course list will be dynamically inserted here -->
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>© <span id="currentyear"></span> Rubia Magdalena Francesco @ Madagascar</p>
-    <p id="lastModified"></p>
-  </footer>
+    <header>
+        <div class="homePage">
+            <img src="images/profile-pic.png" height="150" alt="Profile picture">
+            <h1>ANGE JUNIOR GOHOURI</h1>
+            <button id="menu" title="menu"></button>
+        </div>        
+        <nav class="nav">
+            
+            <ul class="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/ange-junior-gohouri-585b981b0">LinkedIn</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main class="container">
+        <section class="flexbox item-1">
+            <h2>Course Work</h2>
+            <ul class="courseList">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="flexbox item-2" >
+            <h2>Tucson, Ivory Coast</h2>
+            <figure>
+                <img src="images/IvoryCoast-symbolel.png" height="150" alt="Ivory Coast Symbole">
+                <figcaption>Ivory Coast Symbole</figcaption>
+            </figure>          
+
+        </section>
+        <section class="flexbox item-3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="coursesButton">
+                <button id="All">All</button>
+                <button id="CSE">CSE</button>
+                <button id="WDD">WDD</button>
+                <dialog id="courseDetails" ></dialog>     
+            </div>
+
+
+            <div class="classesTaken"></div>
+        </section>
+    </main>
+    <footer>
+        <p>@ <span id="currentyear"></span> ANGE JUNIOR GOHOURI, Ivory Coast</p>
+        <p id="lastModified"></p>
+    </footer>
+    
 </body>
 </html>
