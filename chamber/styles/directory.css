@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+:root {
+    --primary-color: #2a7b48;
+    --secondary-color: #FAEDFC; 
+    --accent-color1: #E6E6E6;
+    --accent-color2: #F2F2F2;
+    --accent-color3: #F4F4F4;
+
+    font-family: Outfit, "Humanst521 BT", roboto, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Humanst521 BT", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.top-banner {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+
+.top-banner .items-left ul {
+    display: flex;
+    column-gap: 6px;
+}
+
+.top-banner .items-right ul {
+    display: flex;
+    column-gap: 5px;
+}
+
+.top-banner .items-right a {
+    color: white;
+}
+
+
+
+
+
+
+.nav-container span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 13px;
+}
+
+.nav-container span img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-container span a {
+    padding: 7px;
+
+}
+
+.nav-container .nav-links {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.nav-container .nav-links a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.nav-container .nav-links a.active {
+    text-decoration: 2px white underline;
+}
+
+.nav-container .nav-links ul li {
+    padding: 5px 0px;
+    margin: 13px 0;
+}
+
+
+
+.nav-container .nav-links a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: .5s ease;
+}
+ 
+
+
+
+/* Styling for the nav display */
+/* .nav-links {
+    display: none;
+}
+
+.nav-links.open {
+    display: block;
+
+} */
+
+.nav-container nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .5s ease-out;
+
+}
+
+.nav-container nav ul {
+    overflow: hidden;
+}
+
+.nav-container nav.open {
+    grid-template-rows: 1fr;
+}
+
+
+#icon-menu::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: 600;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#icon-menu.open::before {
+    content: "\f00d";
+} 
+
+
+
+
+.intro-msg-container {
+    padding: 20px;
+}
+
+
+
+
+/* List and Grid icons styling */
+.list-grid-icons {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.list-grid-icons i {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.list-grid-icons button {
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.list-grid-icons i:hover {
+    color: var(--primary-color);
+}
+
+.list-grid-icons button:hover {
+    border: var(--primary-color) solid .5px;
+    background-color: white;
+    transition: .5s ease;
+
+}
+
+
+/* Grrid and List view styling  */
+#comp-list .table-list:nth-of-type(2),
+#comp-list .table-list:nth-of-type(4),
+#comp-list .table-list:nth-of-type(6) {
+    background-color: var(--secondary-color);
+}
+
+#comp-list {
+    display: none;
+}
+
+#comp-list {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#comp-grid {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#comp-grid div {
+    text-align: center;
+    border: .5px solid var(--primary-color);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+#comp-grid div h1 {
+    color: var(--primary-color);
+}
+
+.table-list {
+    /*class created in JS*/
+    display: grid;
+    grid: auto/1fr;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+footer {
+    margin-top: 50px;
+}
+
+.footer-background {
+    background-color: var(--primary-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container .sec-two i {
+    font-size: 30px;
+}
+
+.footend-container {
+    background-color: black;
+    color: white;
+
+}
+
+.footer-end {
+    padding: 20px;
+}
+
+.sec-one a {
+    color: white;
+    text-decoration: underline 2px white;
+}
+
+.sec-one a:hover {
+    text-decoration: underline 2px black;
+    color: black;
+}

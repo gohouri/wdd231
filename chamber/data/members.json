@@ -1,0 +1,74 @@
+{
+    "companies": [
+        {
+            "name": "Achiv's Production",
+            "address": "No 23 Tutu Layout, Plateau",
+            "phoneNumbers": "(+225) 814-343-4353",
+            "websitesUrls": "https://www.achivsproduction.com",
+            "tagLine": "See the world through my Lens!",
+            "membershipLevels": [
+                {"silver": "🥈"}
+            ]
+        },
+        {
+            "name": "Luna Juice Confectionary",
+            "address": "No 24 sideci, yopougon",
+            "phoneNumbers": "(+225) 913-253-5023",
+            "websitesUrls": "https://www.lunajuiceconfectionary.com",
+            "tagLine": "Prepared with Love and Goodness",
+            "membershipLevels": [
+                {"gold": "🥇"}
+            ]
+        },
+        {
+            "name": "Acromat Ventures",
+            "address": "34 St. Peters Avenue, Cocody",
+            "phoneNumbers": "(+225) 803-754-7434",
+            "websitesUrls": "https://www.acromatventures.com",
+            "tagLine": "Trust and Integrity",
+            "membershipLevels": [
+                {"members": "⭐"}
+            ]
+        },
+        {
+            "name": "W3 Integrated Consult",
+            "address": "No 45 Allen Street, Treichville",
+            "phoneNumbers": "(+225) 804-906-5674",
+            "websitesUrls": "https://www.w3integratedventures.com",
+            "tagLine": "Reliability and Trust",
+            "membershipLevels": [
+                {"members": "⭐"}
+            ]
+        },
+        {
+            "name": "Bontu Farms",
+            "address": "945 Express Highway, Marcory",
+            "phoneNumbers": "(+225) 901-755-8256",
+            "websitesUrls": "https://www.bontufarms.com.ng",
+            "tagLine": "Harvesting Nature's Best",
+            "membershipLevels": [
+                {"gold": "🥇"}
+            ]
+        },
+        {
+            "name": "Nolz Ventures",
+            "address": "Block 9 black Market, Adjame",
+            "phoneNumbers": "(+234) 803-456-7444",
+            "websitesUrls": "https://www.nolzventures.com",
+            "tagLine": "Innovating Tomorrow Today",
+            "membershipLevels": [
+                {"silver": "🥈"}
+            ]
+        },
+        {
+            "name": "Digest Signatures",
+            "address": "Street 35 Central Business District, Yamoussokro",
+            "phoneNumbers": "(+234) 913-756-7399",
+            "websitesUrls": "https://www.digestsignatures.com",
+            "tagLine": "Your Health, Our Commitment",
+            "membershipLevels": [
+                {"members": "⭐"}
+            ]
+        }
+    ]
+}
