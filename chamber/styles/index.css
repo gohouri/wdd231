@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #2a7b48;
+    --secondary-color: #FAEDFC;
+    --accent-color1: #E6E6E6;
+    --accent-color2: #F2F2F2;
+    --accent-color3: #F4F4F4;
+    
+    font-family: Outfit, "Humanst521 BT", roboto, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+ 
+#hero-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero-container span {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+
+#home-container {
+    display: grid;
+    grid: auto/1fr;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.home {
+    padding: 0 20px;
+}
+
+#home-container .events, .cWeather, .wForecast {
+    background-color: aqua;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+
+}
+
+#home-container .events h3, .cWeather h3, .wForecast h3 {
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+#home-container .events p {
+    padding: 15px;
+}
+
+
+
+.weatherInfo-container {
+    display: grid;
+    grid: auto/1fr 2fr;
+    gap: 20px;
+    padding: 15px;
+
+}
+
+.weatherInfo-container img {
+    margin: 0 auto;
+}
+
+.weatherInfo-container .weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wForecast .forecastInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+
+}
+
+
+
+
+
+#companies-container {
+    display: grid;
+    grid: 1fr/auto;
+    padding: 10px 20px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.showCompanies {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.comp-heading {
+    text-align: center;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.companyInfo {
+    padding: 10px 15px;
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    #hero-container {
+        height: 600px;
+    }
+
+    .home {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    #home-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        grid: 1fr/1.7fr 1fr 1fr;
+    }
+    
+    #companies-container {
+        grid: auto/1fr 1fr 1fr;
+    }
+    
+    #companies-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
