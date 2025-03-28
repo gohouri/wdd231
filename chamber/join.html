@@ -24,12 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css" media="screen">
-    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <link rel="stylesheet" href="styles/join.css" media="screen">
     <link rel="stylesheet" href="styles/directory.css" media="screen">
     <link rel="stylesheet" href="styles/directory-large.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/nav.js" defer></script>
 </head>
@@ -42,9 +42,7 @@
                 <li> <i class="fa-brands fa-facebook"></i> </li>
                 <li> <i class="fa-brands fa-twitter"></i> </li>
                 <li> <i class="fa-brands fa-linkedin"></i> </li>
-                <li>
-                    <p>(+225) 07 59 41 23 21</p>
-                </li>
+                <li>(+225) 07 59 41 23 21 </li>
             </ul>
         </nav>
 
@@ -62,91 +60,96 @@
 
         <div class="nav-container">
             <span>
-                <img src="images/Logo-CCI.jpg" alt="Ivory Coast Chambers of Commerce logo" width="180" height="72">
+                <a href="index.html"> 
+                    <img src="images/Logo-CCI.jpg" alt="Ivory Coast Chambers of Commerce logo">
+                </a>
+
                 <span id="icon-menu"> </span>
             </span>
 
             <nav class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="discover.html">Discover</a></li>
                 </ul>
             </nav>
         </div>
 
-    </header> 
-
+    </header>
 
     <main>
-        <div id="hero-container">
-            <a href="index.html"> <img src="images/homepage-photo.jpg" alt="home page hero image" width="300" height="300"> </a>
-            <span tabindex="0">Keynote Ticket</span>
+
+        <div class="intro-Heading">
+            <h1>Become a Member</h1>
+            <p>Join Ivory Coast of Commerce to gain access to exclusive events, benefits, and networking opportunities.</p>
         </div>
 
-        <h1 class="home">Home</h1>
+        <div id="member-container">
 
-        <div id="home-container">
-            <!-- Events -->
-            <div class="events">
-                <h3>Events</h3>
-                <p> <strong>Ivory Coast Networking Conference</strong>
-                    <br> <strong>Date:</strong> 26th April 2025
-                    <br> <strong>Time:</strong> 4pm
-                    <br> <strong>Venue:</strong> Joseph Anouma, Abidjan. 
+            <form method="get" action="thankyou.html" class="org-details" id="formI">
+                
+                <div id="formInfo">
+                    <label> First Name: <input type="text" title="firstName" name="First" autocomplete="given-name" required></label>
+                    <label> Last Name: <input type="text" title="lastName" name="Last" required autocomplete="family-name" ></label>
+                    <label> Organizational Title: <input type="text" title="orgTitle" name="orgTitle" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label> Email Address: <input type="email" title="email address" name="email" required autocomplete="email" placeholder="company@domain.com"></label>
+                    <label> Phone Number: <input type="tel" title="phoneNumber" name="number" required autocomplete="tel" ></label>
+                    <label> Organization Name: <input type="text" title="orgName" name="OrgName" required autocomplete="organization"></label>
 
-                </p>
-            </div>
+                </div>
+                
+                <fieldset id="fieldsetArea">
+                    <legend>Select Membership Level</legend>
+                    <label><input type="radio" name="membershipLevel" value="NP Membership" required> NP Membership</label>
+                    <label><input type="radio" name="membershipLevel" value="Bronze Membership" required> Bronze Membership</label>
+                    <label><input type="radio" name="membershipLevel" value="Silver Membership" required> Silver Membership</label>
+                    <label><input type="radio" name="membershipLevel" value="Gold Membership" required> Gold Membership</label>
+                    
+                </fieldset>
+                
+                <label id="orgDetails"> Organization Description: 
+                    <textarea name="orgDescription" id="orgDescription" title="describe your organization"></textarea>
+                </label>
+                
+                <button id="submit-Btn" type="submit">Submit Application</button>
+                
+                <input type="hidden" id="timestamp" name="timestamp" value="">
 
-            <!-- Current Weather -->
-            <div class="cWeather">
-                <h3>Current Weather</h3>
 
-                <div class="weatherInfo-container">
-                    <img id="weather-icon" src="images/weather-icon.png" alt="weather icon" width="100" height="100">
+            </form>
 
-                    <ul class="weather-info">
-                        
-                    </ul>
+            
 
+            
+            <div class="benefits">
+                <h2>Membership Levels</h2>
+                <p>Learn more about each membership levels and their benefits</p>
+
+            
+                <div id="NP-M">
+                    <h3>NP</h3>
+                    <p>Learn More!</p>
+                </div>
+
+                <div id="Bronze-M">
+                    <h3>Bronze</h3>
+                    <p>Learn More!</p>
+                </div>
+
+                <div id="Silver-M">
+                    <h3>Silver</h3>
+                    <p>Learn More!</p>
+                </div>
+
+                <div id="Gold-M">
+                    <h3>Gold</h3>
+                    <p>Learn More!</p>
                 </div>
             </div>
 
-            <!-- Weather Forecast  -->
-            <div class="wForecast">
-                <h3>Weather Forecast</h3>
-
-                <ul class="forecastInfo">
-
-                </ul>
-
-                <p class="see"></p>
-
-            </div>
-
-        </div>
-
-        <div id="companies-container">
-
-            <!-- <div class="showCompanies"> -->
-
-                <!-- <div class="comp-heading">
-                    <h2>Achiv's Production</h2>
-                    <p>See the world through my lens!</p>
-                </div>
-
-                <div class="companyInfo">
-                    <p>Email: achivproduction@gmail.com</p>
-                    <p>Phone: 123-456-7890</p>
-                    <p>URL: https://achivsproduction.com/</p>
-                </div> -->
-
-            <!-- </div> -->
-
-            <!-- <div>Company B</div>
-
-            <div>Company C</div> -->
+            <dialog id="dsDialogue" class="dDesign"></dialog>
 
         </div>
 
