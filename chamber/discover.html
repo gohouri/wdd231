@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ange Junior Gohouri">
+    <meta name="description" content="Ivory Coast Chamber of Commerce. We have the vision to build a community where businesses can thrive, foster a community of growth, and contribute to economic development. A place for businesses to connect together.">
+
+    <meta property="og:title" content="Ivory Coast Chamber of Commerce">
+    <meta property="og:description" content="Ivory Coast Chamber of Commerce connecting businesses together">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gohouri.github.io/wdd231/chamber/images/homepage-photo.jpeg">
+    <meta property="og:url" content="https://gohouri.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="Ivory Coast Chamber of Commerce, connects and grows businesses.">
+    <title>Discovery | Ivory Coast Chambers of Commerce </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
+    <link rel="stylesheet" href="styles/discovery.css" media="screen">
+    <link rel="stylesheet" href="styles/directory.css" media="screen">
+    <link rel="stylesheet" href="styles/directory-large.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script src="scripts/discovery.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+
+    <header id="greeting-msg"></header>
+
+    <header class="top-banner">
+
+        <nav class="items-left">
+            <ul>
+                <li> <i class="fa-brands fa-facebook"></i> </li>
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+                <li> <i class="fa-brands fa-linkedin"></i> </li>
+                <li> (+225) 07 59 41 23 21 </li>
+            </ul>
+        </nav>
+
+        <nav class="items-right">
+            <ul>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="#">Privacy Policy</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <header>
+
+        <div class="nav-container">
+            <span>
+                <a href="index.html"> 
+                    <img src="images/Logo-CCI.jpg" alt="Ivory Coast Chambers of Commerce logo">
+                </a>
+
+                <span id="icon-menu"> </span>
+            </span>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <main>
+        <div id="discover-container">
+
+            <div class="att-1">
+                <div class="Events">
+                    <h1>Special Events</h1>
+                    <ul>
+                        <li>Business Diversity Conference | 24th May 2025, 4pm</li>
+                        <li>Business Excellence Award Event | 3rd July 2025, 2pm</li>
+                        <li>Professional Development Seminar | 16th July 2025, 1pm</li>
+                    </ul>
+
+                </div>
+
+                <div id="calendar-section">
+
+                    <div class="calendar-header">
+                        <button id="prev-month">&#9664;</button>
+                        <span id="month-year"></span>
+                        <button id="next-month">&#9654;</button>
+                    </div>
+
+                    <div class="calendar">
+                        <!-- Day names -->
+                        <div class="day-names">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div> 
+                            <div>Sat</div>
+                        </div>
+                        <!-- Days will be dynamically populated -->
+                        <div class="days" id="days"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="att-2">
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Basilique_Notre-Dame_de_la_Paix_Yamoussoukro.jpg" alt="Basilique Notre-Dame de la Paix" loading="lazy" width="1200" height="800">
+
+                        <div class="ptag">
+                            <p> <strong> Basilique Notre-Dame de la Paix </strong> <br>One of the largest churches in the world, modeled after St. Peter’s Basilica in the Vatican. Located in Yamoussoukro, it is a major religious and architectural landmark. Visitors can admire its beautiful design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Félix Houphouët-Boigny International Airport.jpg" alt="Félix Houphouët-Boigny International Airport" loading="lazy" width="800" height="445">
+                        <div class="ptag">
+                            <p><strong>Félix Houphouët-Boigny International Airport</strong> <br> Situated in Abidjan, this is the main international airport of Côte d'Ivoire. It serves as a hub for both regional and international flights, handling millions of passengers annually.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Stade Olympique d'Ébimpé.jpg" alt="Ébimpé Olympic Stadium" loading="lazy" width="602" height="510">
+                        <div class="ptag">
+                            <p> <strong> Ébimpé Olympic Stadium</strong> <br> Also known as Stade Alassane Ouattara, this multi-purpose stadium is located in the Abobo-Ébimpé area of Abidjan. With a capacity of 60,000, it hosts major sports events and concerts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Auto-route_du_Nord_Côte_d'Ivoire.jpg" alt="Motorway North Ivory Coast" loading="lazy" width="1024" height="683">
+                        <div class="ptag">
+                            <p> <strong> Motorway North Ivory Coast </strong> <br> The first motorway in Côte d'Ivoire, connecting Abidjan to Bouaké via Yamoussoukro. It enhances trade and travel between major cities and neighboring countries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Barrage_hydroélectrique_de_Soubré.jpg" alt="Soubré hydroelectric dam" loading="lazy" width="1600" height="900">
+                        <div class="ptag">
+                            <p> <strong> Soubré hydroelectric dam</strong> <br> Inaugurated on November 2, 2017, this hydroelectric dam is located near the city of Soubré on the Sassandra River. It has an installed capacity of 275 megawatts, making it the largest hydroelectric facility in the country.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/LDS Abidjan Temple.jpg" alt="LDS Abidjan Temple" loading="lazy" width="1600" height="1197">
+                        <div class="ptag">
+                            <p> <strong> LDS Abidjan Temple</strong> <br> The first temple of The Church of Jesus Christ of Latter-day Saints in Côte d'Ivoire, located in Abidjan. It serves as a spiritual center for Latter-day Saints in West Africa.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-background">
+
+            <div class="footer-container">
+                <div class="sec-one">
+                    <p>Ivory Coast Chamber of Commerce <br>
+                        6 Avenue Joseph Anouma <br>
+                        Abidjan <br>
+                        <a href="#">info@cci.ci</a><br>
+                        (+225) 27 20 33 16 00
+                    </p>
+                </div>
+
+                <div class="sec-two">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+                <div class="sec-three">
+                    <p>WDD231 Web Development 1 Project
+                        <br>Brigham Young University - Idaho
+                        <br>Gohouri Ange Junior
+                    </p>
+                    <p id="lastModified"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footend-container">
+            <div class="footer-end">
+                <p><span id="currentYear">©</span> Ivory Coast Chamber of Commerce | All rights reserved</p>
+                <p>Designed by Gohouri Ange Junior</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
