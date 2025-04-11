@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page bountiful</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link>
+</head>
+<body>
+    <header>
+        <p class="logo">Fresh<strong class="point-logo">.</strong></p>
+        <div id="hamburgerBtn"><span><strong>&#9776</strong></span><span><strong>X</strong></span></div>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="bountiful.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About Us</strong></a></li>
+                <li><a class="active" href="fresh.html"><strong>Fresh</strong></a></li>
+            </ul>
+        </nav>
+        <hr id="hr-nav">
+    </header>
+    <main class="grid-fresh">
+        <h2 class="bigger-h">Make your own <strong class="point-logo">Drink!</strong></h2>
+        <form id="mix-form">
+            <input type="date" name="date" hidden id="date">
+            <label class="margin-just" for="fName">First Name<span class="req-f">*</span> <br>
+                <input name="fName" type="text" class="input-box" id='fName' required>
+            </label>
+            <label class="margin-just" for="email">Email<span class="req-f">*</span><br>
+                <input name="email" type="email" id="email" class="input-box" required>
+            </label>
+            <label class="margin-just" for="phone">Phone Number<span class="req-f">*</span><br>
+                <input name="phone" type="tel" id="phone" class="input-box" required>
+            </label>
+            <div id="fruit-selector">
+                <p>Select up to 3 fruits:</p>
+            </div>
+            <label for="add-instructions"> <p>Special requests</p> 
+            <textarea name="add-instructions" id="add-instructions" cols="30" rows="10" class="input-box"></textarea></label> <br>
+            <input type="button" value="Mix it Up!" class="btn-alt btn" id="mix-btn">
+        </form>
+        <section id="form-output" class="true-center">
+            <h2 class="bigger-h">Output</h2>
+            <div id="output">
+                <p>Please create a drink to see the nutrients it contains</p>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <hr class="footer-hr">
+        <p><strong>Fresh. © 2025 - Gohouri Ange Junior</strong></p>
+        <p>angejunior246@gmail.com</p>
+        <p>+225 0759412321</p>
+        <section class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" title="icon of facebook"></a>
+            <a href="https://www.telegram.com/" target="_blank"><img src="images/telegram.png" title="incon of telegram"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" title="icon of twitter"></a>
+        </section>
+        <p>Last Modified: <span class="last-modified"></span></p>
+    </footer>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/display-number.js"></script>
+    <script src="scripts/last-update.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@media only screen and (min-width: 35rem) {
+
+    /*HEADER*/
+    header {
+        margin: 0 2em;
+    }
+
+    #hamburgerBtn {display: none;}
+    #primaryNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap:0;
+    }
+
+    nav ul li:nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+        border-top:none;
+    }
+    nav ul li:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    nav ul li:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    header p {
+        position: absolute;
+        top:4%;
+        left:22%;
+    }
+
+    /* MAIN */
+    main {
+        margin: 0 2em;
+    }
+
+    .img-juice {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .img-juice2 {
+        display: none;
+    }
+
+    .paragraph-juice {
+        grid-column: 2;
+        grid-row: 1;
+        align-items: center;
+    }
+
+    .hero-text {
+        grid-column: 1;
+        grid-row: 2;
+        align-items: center;
+    }
+
+    .description-hero {
+        grid-column: 1;
+        grid-row: 3;
+        align-items: center;
+        
+    }
+
+    .form-button{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .order-button {
+        align-items: center;
+        height: 50px;
+        font-size: 1.2rem;
+        margin: 10px 10px;
+    }
+
+    .display-number-orders {
+        grid-column: 2;
+        grid-row: 3;
+        align-items: center;
+        height: 50%;
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    /* WEATHER SECTION*/
+    .weatherSection  {
+        grid-template-rows: .5fr 1fr;
+    }
+    .headingWeather {
+        font-size: 1.8rem;
+    }
+
+    .weatherSection .true-center {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .weather-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    table {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin: 0 2em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-hr {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .social-links {
+        grid-column: 2;
+    }
+
+
+    /* FORM */
+
+    
+
+    #add-instructions {
+        width: 500px;
+    }
+
+
+
+
+
+
+
+
+
+}

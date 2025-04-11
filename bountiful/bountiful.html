@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page bountiful</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link>
+    <link>
+</head>
+<body>
+    <header>
+        <p class="logo">Fresh<strong class="point-logo">.</strong></p>
+        <div id="hamburgerBtn"><span><strong>&#9776</strong></span><span><strong>X</strong></span></div>
+        <nav>
+            <ul id="primaryNav">
+                <li><a class="active" href="bountiful.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About Us</strong></a></li>
+                <li><a href="fresh.html"><strong>Fresh</strong></a></li>
+            </ul>
+        </nav>
+        <hr id="hr-nav">
+    </header>
+    <main class="grid-home">
+        <h1 class="hero-text">Taste in every healthy sip</h1>
+        <p class="description-hero">For a natural energy drink a stewbarry smoothie, juicier then your.</p>
+        <form class="form-button" action="./fresh.html">
+            <input class="order-button" value="Order Now" type="submit" title="button to fresh page">
+        </form>
+
+        <div class="display-number-orders">My Orders: <span id="drink-total"></span></div>
+        <img class="img-juice" src="images/juice.png" title="image of juice">
+        <img class="img-juice2" src="images/juicelarge.png" title="image of juice 2">
+        <p class="paragraph-juice">The northern and southern coastal regions are very different, but both are part of the California coastal region. The northern region is more mountainous and rocky with chilly water. The southern region isn't as cold and has more sandy beaches.</p>
+        <section class="weatherSection">
+            <h2 class="headingWeather">Weather</h2>
+            <div id="top-weath" class="true-center">
+                <img src="https://via.placeholder.com/150" alt="placeholder" id="weath-img" title="placeholder of image">
+                <div class="weather-text">
+                    <span id="conditions"></span>
+                    <span class="bigger-h" id="temp"></span>
+                    <span id="humidity"></span>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th id="dOW1"></th>
+                    <th id="dOW2"></th>
+                    <th id="dOW3"></th>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td id="hi1"></td>
+                    <td id="hi2"></td>
+                    <td id="hi3"></td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td id="lo1"></td>
+                    <td id="lo2"></td>
+                    <td id="lo3"></td>
+                </tr>
+            </table> 
+        </section>
+    </main>
+    <footer>
+        <hr class="footer-hr">
+        <p><strong>Fresh. © 2025 - Gohouri Ange Junior</strong></p>
+        <p>angejunior246@gmail.com</p>
+        <p>+225 0759412321</p>
+        <section class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" title="icon of facebook"></a>
+            <a href="https://www.telegram.com/" target="_blank"><img src="images/telegram.png" title="incon of telegram"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" title="icon of twitter"></a>
+        </section>
+        <p>Last Modified: <span class="last-modified"></span></p>
+    </footer>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/display-number.js"></script>
+    <script src="scripts/last-update.js"></script>
+</body>
+</html>
